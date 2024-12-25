@@ -1,0 +1,116 @@
+/* Search Bar */
+#searchBar .input-group-text {
+  background-color: var(--light-mode-ele);
+  color: var(--light-mode-input);
+}
+
+#searchCountry,
+#filterRegion:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #e4e4e4;
+}
+
+
+
+/* Filter Region */
+#filterRegion {
+  width: 14rem;
+  cursor: pointer;
+}
+
+/* Loading Element */
+.loading-container {
+  height: 100vh;
+}
+
+.loading-img {
+  height: 150px;
+}
+
+/* Country Cards */
+#card {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
+
+.noCountryFound {
+  height: 100vh;
+  margin: auto;
+}
+
+/* Dark Mode */
+#dark #searchCountry {
+  background-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+  border-color: var(--dark-mode-ele);
+}
+
+#dark #searchCountry::placeholder {
+  color: var(--dark-mode-text);
+}
+
+#dark .input-group-text {
+  background-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+  border-color: var(--dark-mode-ele);
+}
+
+#dark #filterRegion {
+  background-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+  border-color: var(--dark-mode-ele);
+  background-image: url("../icons/arrow-down-darkmode.png");
+}
+
+#dark #card {
+  background-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+}
+
+#dark .noCountryFound {
+  color: var(--dark-mode-text);
+}
+
+
+/* Responsive Design */
+@media (max-width: 575px) {
+  #card {
+    width: calc(100%);
+    margin: 0 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #card {
+    width: calc(50% - 1.5rem);
+  }
+
+  #searchBar {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #search-filter-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #card {
+    width: calc(33.3% - 2.1rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  #card {
+    width: calc(25% - 2.25rem);
+  }
+}

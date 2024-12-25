@@ -1,0 +1,86 @@
+/* back Button */
+.back-button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.back-button .back-icon {
+  width: 1rem;
+}
+
+/* Details List Component */
+.country-name {
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.country-details span {
+  font-weight: 600;
+}
+
+.border-countries {
+  align-items: center;
+}
+
+.border-countries span {
+  font-weight: 600;
+}
+
+.border-countries .border-buttons {
+  border: 1px solid var(--light-mode-bg);
+}
+
+.border-countries .border-buttons {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Dark Mode */
+#dark .back-button {
+  background-color: var(--dark-mode-ele);
+  border-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+}
+
+#dark .back-button:hover {
+  background-color: var(--dark-mode-bg);
+  border-color: var(--dark-mode-bg);
+}
+
+
+#dark .section-details {
+  color: var(--dark-mode-text);
+}
+
+#dark .section-details .border-buttons {
+  background-color: var(--dark-mode-ele);
+  border-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+}
+
+#dark .section-details .border-buttons:hover {
+  background-color: var(--dark-mode-bg);
+  border-color: var(--dark-mode-bg);
+}
+
+#dark .section-details {
+  color: var(--dark-mode-text);
+}
+
+#dark .section-details .border-buttons {
+  background-color: var(--dark-mode-ele);
+  border-color: var(--dark-mode-ele);
+  color: var(--dark-mode-text);
+}
+
+#dark .section-details .border-buttons:hover {
+  background-color: var(--dark-mode-bg);
+  border-color: var(--dark-mode-bg);
+}
+
+@media (max-width:576px) {
+  .border-countries {
+    flex-direction: column;
+    align-items: start;
+  }
+}

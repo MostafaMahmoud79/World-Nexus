@@ -1,0 +1,21 @@
+#light .navbar {
+  background-color: var(--light-mode-ele);
+  /* color: var(--dark-mode-text); */
+}
+
+.navbar .toggle-text {
+  font-weight: 600;
+}
+
+#dark .navbar {
+  background-color: var(--dark-mode-ele);
+  /* color: var(--dark-mode-text); */
+}
+
+#dark .navbar .navbar-brand {
+  color: var(--dark-mode-text);
+}
+
+#dark .navbar .toggle-text {
+  color: var(--dark-mode-text);
+}
