@@ -2,7 +2,7 @@
 
 ## Overview
 
-Country Hub app allows users to find the country on the home page and the app has a feature to search for the country then the app retrieves information about the name, population, countries on the border, etc... for the country.
+world-nexus app allows users to find the country on the home page and the app has a feature to search for the country then the app retrieves information about the name, population, countries on the border, etc... for the country.
 
 ## Features
 
